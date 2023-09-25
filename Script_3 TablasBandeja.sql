@@ -1,0 +1,105 @@
+------------------------------------------------------------
+-----------------------JAQM06-------------------------------
+------------------------------------------------------------
+CREATE TABLE "JAQM06" 
+   (	"JAQM06CANA" VARCHAR2(2000) NOT NULL ENABLE, 
+	"JAQM06COAN" CHAR(10) NOT NULL ENABLE, 
+	"JAQM06CACL" NUMBER(10,0), 
+	"JAQM06MSBS" NUMBER(17,2), 
+	"JAQM06FEIN" DATE, 
+	"JAQM06NUM1" NUMBER(10,0), 
+	"JAQM06NUM2" NUMBER(10,0), 
+	"JAQM06IMP1" NUMBER(17,2), 
+	"JAQM06IMP2" NUMBER(17,2), 
+	"JAQM06VAR1" VARCHAR2(255), 
+	"JAQM06VAR2" VARCHAR2(255), 
+	"JAQM06FEC1" DATE, 
+	"JAQM06FEC2" DATE, 
+	 PRIMARY KEY ("JAQM06CANA", "JAQM06COAN"));
+
+
+CREATE INDEX "JAQM06A1" ON "JAQM06" ("JAQM06CANA", "JAQM06COAN") ;
+
+------------------------------------------------------------
+-----------------------JAQMB6-------------------------------
+------------------------------------------------------------
+CREATE TABLE "JAQMB6" 
+   (	"JAQMB6AGEN" VARCHAR2(30) NOT NULL ENABLE, 
+	"JAQMB6COMI" VARCHAR2(2000) NOT NULL ENABLE, 
+	"JAQMB6CACL" NUMBER(10,0), 
+	"JAQMB6MSBS" NUMBER(17,2), 
+	"JAQMB6FEIN" DATE, 
+	"JAQMB6NUM1" NUMBER(10,0), 
+	"JAQMB6NUM2" NUMBER(10,0), 
+	"JAQMB6IMP1" NUMBER(17,2), 
+	"JAQMB6IMP2" NUMBER(17,2), 
+	"JAQMB6VAR1" VARCHAR2(255), 
+	"JAQMB6VAR2" VARCHAR2(255), 
+	"JAQMB6FEC1" DATE, 
+	"JAQMB6FEC2" DATE, 
+	 PRIMARY KEY ("JAQMB6AGEN", "JAQMB6COMI"));
+
+
+CREATE INDEX "JAQMB6A1" ON "JAQMB6" ("JAQMB6AGEN", "JAQMB6COMI") ;
+
+------------------------------------------------------------
+-----------------------JAQMC6-------------------------------
+------------------------------------------------------------
+CREATE TABLE "JAQMC6" 
+   (	"JAQMC6REGI" VARCHAR2(30) NOT NULL ENABLE, 
+	"JAQMC6ZONA" VARCHAR2(40) NOT NULL ENABLE, 
+	"JAQMC6AGEN" VARCHAR2(30) NOT NULL ENABLE, 
+	"JAQMC6CACL" NUMBER(10,0), 
+	"JAQMC6MSBS" NUMBER(17,2), 
+	"JAQMC6FEIN" DATE, 
+	"JAQMC6NUM1" NUMBER(10,0), 
+	"JAQMC6NUM2" NUMBER(10,0), 
+	"JAQMC6IMP1" NUMBER(17,2), 
+	"JAQMC6IMP2" NUMBER(17,2), 
+	"JAQMC6VAR1" VARCHAR2(255), 
+	"JAQMC6VAR2" VARCHAR2(255), 
+	"JAQMC6FEC1" DATE, 
+	"JAQMC6FEC2" DATE, 
+	 PRIMARY KEY ("JAQMC6REGI", "JAQMC6ZONA", "JAQMC6AGEN"));
+
+CREATE INDEX "JAQMC6A1" ON "JAQMC6" ("JAQMC6REGI", " JAQMC6ZONA", "JAQMC6AGEN") ;
+
+------------------------------------------------------------
+-----------------------JAQMD6-------------------------------
+------------------------------------------------------------
+CREATE TABLE "JAQMD6" 
+   (	"JAQMD6REGI" VARCHAR2(30) NOT NULL ENABLE, 
+	"JAQMD6ZONA" VARCHAR2(40) NOT NULL ENABLE, 
+	"JAQMD6CACL" NUMBER(10,0), 
+	"JAQMD6MSBS" NUMBER(17,2), 
+	"JAQMD6FEIN" DATE, 
+	"JAQMD6NUM1" NUMBER(10,0), 
+	"JAQMD6NUM2" NUMBER(10,0), 
+	"JAQMD6IMP1" NUMBER(17,2), 
+	"JAQMD6IMP2" NUMBER(17,2), 
+	"JAQMD6VAR1" VARCHAR2(255), 
+	"JAQMD6VAR2" VARCHAR2(255), 
+	"JAQMD6FEC1" DATE, 
+	"JAQMD6FEC2" DATE, 
+	 PRIMARY KEY ("JAQMD6REGI", "JAQMD6ZONA"));
+
+CREATE INDEX "JAQMD6A1" ON "JAQMD6" ("JAQMD6REGI", " JAQMD6ZONA") ;
+
+------------------------------------------------------------
+-----------------------JAQME6-------------------------------
+------------------------------------------------------------
+CREATE TABLE "JAQME6" 
+   (	"JAQME6REGI" VARCHAR2(30) NOT NULL ENABLE, 
+	"JAQME6CACL" NUMBER(10,0), 
+	"JAQME6MSBS" NUMBER(17,2), 
+	"JAQME6FEIN" DATE, 
+	"JAQME6NUM1" NUMBER(10,0), 
+	"JAQME6NUM2" NUMBER(10,0), 
+	"JAQME6IMP1" NUMBER(17,2), 
+	"JAQME6IMP2" NUMBER(17,2), 
+	"JAQME6VAR1" VARCHAR2(255), 
+	"JAQME6VAR2" VARCHAR2(255), 
+	"JAQME6FEC1" DATE, 
+	"JAQME6FEC2" DATE, 
+	 PRIMARY KEY ("JAQME6REGI"));
+CREATE INDEX "JAQME6A1" ON "JAQME6" ("JAQME6REGI") ;
